@@ -27,7 +27,7 @@ miles_event_mapping = {
     "LS Friday-B":("Swim (B Week)","swim suit")
 }
 
-event_mapping = bp_event_mapping
+event_mapping = miles_event_mapping
 
 @click.group()
 def cli():
@@ -80,7 +80,6 @@ def inspect(input_ics):
         calendar = ics.Calendar(f.read())
         for event in sorted(calendar.events, key=lambda x: x.begin):
             click.echo(f"{event.name} - {event.begin.date()}")
-
 
 
 if __name__ == '__main__':
