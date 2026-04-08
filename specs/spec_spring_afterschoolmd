@@ -1,0 +1,11 @@
+Overview
+--------
+The goal is to create a ICS calendar that we can subscribe to on google calendar and invite others to that contains all of Juniper's after school classes.
+
+Request
+-------
+Use the lib/calendar_test.ics and spring_2026_afterschool.md file to generate a new ICS file that contains the necessary information for Juniper's afterschool programming.  In particular:
+1) We should use the dates supplied in the spring_2026_afterschool.md doc for Monday, Tuesday, Thursday, and Friday.
+2) For every Wednesday in calendar_test.ics we should create an event that is called "Playgroup", which is located at 701 Carroll Street
+3) All events should go from 3-4:30
+4) All event titles should be of the format "J - [Program Name]" and in the location field for the event it should have the location.
